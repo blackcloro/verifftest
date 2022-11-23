@@ -1,46 +1,26 @@
-# Getting Started with Create React App
+# Veriff engine test task
+**Running the solution**
+```
+yarn install
+yarn start
+```
+Working on this challenge was a lot of fun for me. Having to develop following design and functionality concept was something I really appreciated.
+I ran across various issues when working on the project. This was my first project in which I utilized Typescript. I started with a small mock in Javascript to explore how I might utilize test selectors, but it was not working that well with Unit Testing (with testing-library that I learned at Veriff workshop). I then moved on to Cypress to learn more about E2E testing. In any case, I'm truly sorry for not being able to get the tests to work, therefore I started working on the project to finish it before the deadline.
+Looking back, it was not stressful, but rather a very delightful experience.
+I took this assignment very seriously.
+Technically, it did not appear to be a difficult task, so I utilized tools that I use on a daily basis.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+I should have done the following:
+* Create a single Check component rather than a group of them
+* Testing (I had some cases, one of which was to test how the submit button works, but I didn't add them because the tests ran randomly and I didn't know how to solve it).
+* Read my code more thoroughly and refactor it to make it more concise (do I need so many states? etc.).
+* Event handlers should be more simple; they are far too lengthy and complicated for the purpose at hand.
+* Check to see if the data provided by the API is valid and usable.
+* Better error handling
 
-## Available Scripts
+Things that I did:
+* React module CSS
+* Nearly copy the style that the video showed
+* Use react-query to wait for the fetching data
 
-In the project directory, you can run:
 
-### `yarn start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
