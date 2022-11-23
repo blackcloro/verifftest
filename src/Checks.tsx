@@ -59,7 +59,7 @@ export default function Checks() {
           setChecks(checkCopy)
         } else if (e.key === "ArrowLeft" || e.key === "1") {
           let checkCopy = checks.slice()
-          checkCopy = checkCopy.map(check => {
+          checkCopy = checkCopy.map((check, i) => {
             if (check.id === active) {
               disable = true
               if (checks.length-1 !== currentCheck) {
@@ -67,10 +67,14 @@ export default function Checks() {
               }
               return {...check, choice: "yes"}
             }
-            if (disable && !checks[currentCheck].choice) {
+            if (disable && !checks[currentCheck + 1].choice && i-1 === currentCheck) {
+              return {...check, disabled: false}
+            } else if (disable && checks[i-1].choice === "yes"){
+              return {...check, disabled: false}
+            } else if (disable && check.choice === "no"){
               disable = false
               return {...check, disabled: false}
-            } else if (disable){
+            } else if (disable && check.choice){
               return {...check, disabled: false}
             }
             return check
@@ -118,7 +122,7 @@ export default function Checks() {
       let checkCopy: Check[] = checks.slice()
       let disable = false
       if (choice) {
-        checkCopy = checkCopy.map(checkMap => {
+        checkCopy = checkCopy.map((checkMap,i) => {
           if (checkMap.id === check.id) {
             if (checkCopy.length - 1 !== currentCheck) {
               setActive(checks[currentCheck + 1].id)
@@ -126,10 +130,14 @@ export default function Checks() {
             disable = true
             return {...checkMap, choice: "yes", disabled: false}
           }
-          if (disable && !checkCopy[currentCheck + 1].choice) {
+          if (disable && !checks[currentCheck + 1].choice && i-1 === currentCheck) {
+            return {...checkMap, disabled: false}
+          } else if (disable && checks[i-1].choice === "yes"){
+            return {...checkMap, disabled: false}
+          } else if (disable && check.choice === "no"){
             disable = false
             return {...checkMap, disabled: false}
-          } else if (disable) {
+          } else if (disable && check.choice){
             return {...checkMap, disabled: false}
           }
           return checkMap
