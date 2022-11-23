@@ -13,7 +13,7 @@ After speaking with Egert, I believe there are several ways I might have shot my
 
 I should have done the following:
 * Create a single Check component rather than a group of them
-* Testing
+* Testing (I had some cases, one of which was to test how the submit button works, but I didn't add them because the tests ran randomly and I didn't know how to solve it).
 * Read my code more thoroughly and refactor it to make it more concise (do I need so many states? etc.).
 * Event handlers should be more simple; they are far too lengthy and complicated for the purpose at hand.
 * Check to see if the data provided by the API is valid and usable.
