@@ -17,6 +17,7 @@ I should have done the following:
 * Event handlers should be more simple; they are far too lengthy and complicated for the purpose at hand.
 * Check to see if the data provided by the API is valid and usable.
 * Better error handling
+* Submit data as JSON
 
 Things that I did:
 * React module CSS
