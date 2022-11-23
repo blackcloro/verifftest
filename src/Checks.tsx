@@ -134,10 +134,10 @@ export default function Checks() {
             return {...checkMap, disabled: false}
           } else if (disable && checks[i-1].choice === "yes"){
             return {...checkMap, disabled: false}
-          } else if (disable && check.choice === "no"){
+          } else if (disable && checkMap.choice === "no"){
             disable = false
             return {...checkMap, disabled: false}
-          } else if (disable && check.choice){
+          } else if (disable && checkMap.choice){
             return {...checkMap, disabled: false}
           }
           return checkMap
