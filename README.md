@@ -9,7 +9,6 @@ I ran across various issues when working on the project. This was my first proje
 Looking back, it was not stressful, but rather a very delightful experience.
 I took this assignment very seriously.
 Technically, it did not appear to be a difficult task, so I utilized tools that I use on a daily basis.
-After speaking with Egert, I believe there are several ways I might have shot myself in the leg (not even talking about lacking tests).
 
 I should have done the following:
 * Create a single Check component rather than a group of them
