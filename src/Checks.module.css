@@ -1,0 +1,72 @@
+.check {
+  width: 390px;
+  height: 90px;
+  color: var(--primary-color);
+  background-color: "white";
+  position: relative;
+  padding: 0 16px;
+  color: #03282C;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.4px;
+  font-family: Helvetica;
+  padding: 10px 10px 40px;
+  margin: 0;
+}
+
+.check h4 {
+  position: relative;
+  padding: 0;
+  margin: 10px 0px;
+}
+
+.disabled h4 {
+  position: relative;
+  padding: 0;
+  margin: 10px 0px;
+}
+
+.disabled {
+  width: 390px;
+  height: 90px;
+  position: relative;
+  color: gray;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.4px;
+  font-family: Helvetica;
+  padding: 10px 10px 40px;
+  pointer-events: none;
+}
+
+.error {
+  color: red;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.4px;
+  font-family: Helvetica;
+  padding: 20px;
+}
+
+.success {
+  color: var(--primary-color);
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: 0.4px;
+  font-family: Helvetica;
+  padding: 20px;
+}
+
+.submit {
+  position: relative;
+  top: 20px;
+  left: 270px;
+  width: 100px;
+}
+
+.active {
+  background-color: var(--highlight-color);
+}
